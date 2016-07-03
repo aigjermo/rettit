@@ -16,7 +16,8 @@ class Console(object):
         if error_callback:
             parser.error = error_callback
 
-        parser.add_argument("type", choices=["precipitation"],
+        parser.add_argument("type",
+                            choices=["precipitation", "noop"],
                             help="the type of data to correct")
 
         parser.add_argument("-i", "--input",
