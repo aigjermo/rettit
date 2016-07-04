@@ -22,11 +22,13 @@ class Console(object):
 
         parser.add_argument("-i", "--input",
                             default=stdin,
+                            metavar="FILE",
                             type=FileType('r'),
                             help="read input data from file")
 
         parser.add_argument("-o", "--output",
                             default=stdout,
+                            metavar="FILE",
                             type=FileType('w'),
                             help="write output data to file")
 
